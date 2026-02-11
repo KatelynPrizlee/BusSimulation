@@ -1,17 +1,19 @@
+package com.kpriz.bussimulator;
 
 import java.util.ArrayList;
 
 public class BusManager{
 
-    public static void GenerateStudents(ArrayList<Student> st, int n){
+    public void GenerateStudents(ArrayList<Student> st, int n){
         
         for(int i = 0; i < n; i++){            
             st.add(new Student(i));
         }
     }
-    public static void main(String[] args) {
+    public Seat[][] runSim() {
+
         int stNum = 1 + (int)(Math.random() * ((48 - 1) + 1));
-        System.out.println("Generating Students..");
+        //System.out.println("Generating Students..");
         ArrayList<Student> studentList = new ArrayList<>();
 
         GenerateStudents(studentList,stNum);
@@ -23,7 +25,7 @@ public class BusManager{
 
         Bus Route1 = new Bus();
 
-        System.out.println("Deciding Students..");
+        //System.out.println("Deciding Students..");
         
         for(Student s : studentList){
 
@@ -49,9 +51,9 @@ public class BusManager{
 
         }
 
+        //Route1.displaySeats();
 
-        Route1.displaySeats();
-
+        return Route1.getArray();
 
     }
 }

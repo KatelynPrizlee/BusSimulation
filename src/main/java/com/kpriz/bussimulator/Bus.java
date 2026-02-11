@@ -1,7 +1,7 @@
+package com.kpriz.bussimulator;
 public class Bus {
 
-    private Seat seats[][];
-
+    private Seat[][] seats;
 
     public Bus(){
         this.seats = new Seat[12][4];
@@ -126,6 +126,10 @@ public class Bus {
             System.out.println();
         }
         System.out.println("------Back------");
+    }
+
+    public Seat[][] getArray(){
+        return seats;
     }
 
 }
