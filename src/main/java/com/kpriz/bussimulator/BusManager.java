@@ -53,7 +53,7 @@ public class BusManager{
 
         //Route1.displaySeats();
 
-        return Route1.getArray();
+        return (Seat[][]) Route1.getArray();
 
     }
 }

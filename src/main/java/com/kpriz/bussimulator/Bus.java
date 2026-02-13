@@ -1,4 +1,5 @@
 package com.kpriz.bussimulator;
+
 public class Bus {
 
     private Seat[][] seats;

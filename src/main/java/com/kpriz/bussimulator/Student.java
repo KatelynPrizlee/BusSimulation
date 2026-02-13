@@ -1,3 +1,4 @@
+package com.kpriz.bussimulator;
 public class Student {
     private int Stop; //which stop is this person going to get off at? 1,2,3
     private char gender; //B for Boy, G for Girl
@@ -25,7 +26,7 @@ public class Student {
         return Stop;
     }
 
-    public char getGender(){
+    public Character getGender(){
         return gender;
     }
 

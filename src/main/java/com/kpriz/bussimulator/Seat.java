@@ -1,9 +1,10 @@
+package com.kpriz.bussimulator;
 public class Seat {
     private boolean taken;
     private Student s;
 
     public Seat(){
-        this. taken = false;
+        this.taken = false;
     }
 
     public boolean isTaken(){
@@ -11,7 +12,7 @@ public class Seat {
     }
 
     public boolean isGirl(){
-        //if(s == null) return true;      
+        if(s == null) return false;      
         return (s.getGender()=='G');
     }
 

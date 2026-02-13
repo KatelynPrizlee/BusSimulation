@@ -77,7 +77,7 @@ body {
 .light {
     height: 30px;
     width: 120px;
-    margin: 0 90px;
+    margin: 0 40px;
     background-color: #efede3;
     border-radius: 10px;
 }
@@ -93,8 +93,8 @@ body {
 .wheels {
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;
-    height: 100%;*/
+    justify-content: space-between;
+    height: 100%;
 }
 
 .wheels.left{
@@ -114,67 +114,51 @@ body {
 }
 
 #bus {
-    display: grid;
-    grid-template-columns: 80px 80px 40px 80px 80px;
-    gap: 12px;
-    
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: column;
+    gap: 8px;
 
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .seat {
     width: 80px;
     height: 80px;
     border-radius: 12px;
-    background: #d1d5db;
-    box-shadow: 0 5px 5px #000000;
-    /*background: #e5e7eb;
-    display: flex;
-    align-items: center;
+    display:flex;
+    /*background: #d1d5db;*/
+    /*box-shadow: 0 5px 5px #000000;*/
     justify-content: center;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: all 0.4s ease;*/
+    align-items: center;
 }
 
-.seat.empty {
+.aisle{
+    width: 30px;
+}
+
+/*.seat.empty {
     background: #a73030;
 }
+*/
 
-.seat.boy {
-    background: rgb(11, 11, 185);
+.girl {
+    background-color: rgb(253, 148, 218);
     color: #333;
 }
 
-.seat.girl {
-    background: rgb(227, 97, 119);
+.boy {
+    background-color: rgb(45, 80, 255);
     color: #333;
 }
 
-.seat.filled {
-    animation: popIn 0.4s ease forwards;
-}
-
-.walker{
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    z-index: 10;
-    transition: transform 0.8s ease;
-}
-
-.walker.boy{background: blue;}
-.walker.girl{background: pink;}
-
-@keyframes popIn {
-    0% {
-        transform: scale(0.7);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+.empty{
+    background-color: lightgray;
 }
 
 .section2 {

@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: rgb(129, 119, 70);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    background: rgb(147, 147, 147);
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.header p {
+    margin-bottom: 12px;
+}
+
+.header button {
+    padding:  10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor:pointer;
+    background-color: rgb(11, 139, 37);
+    color: rgb(0, 0, 0);
+    transition: background 0.2 ease-out, transform 0.2s ease-out;
+    box-shadow: 0 5px 5px #3a3a3a;
+    font-weight: bold;
+}
+
+.header button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(11, 139, 37);
+    font-weight: bold;
+}
+
+.section1 {
+    position: relative;
+    margin-top: -10px;
+    padding: 20px;
+    background: rgb(228, 226, 178);
+    width: fit-content;
+    border-radius: 16px;
+}
+
+.section1 p{
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.bus-lights {
+    position: absolute;
+    top: 530px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.light {
+    height: 30px;
+    width: 120px;
+    margin: 0 40px;
+    background-color: #efede3;
+    border-radius: 10px;
+}
+
+.bus-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.wheels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.wheels.left{
+    justify-content:flex-end;
+}
+
+.wheels.right{
+    justify-content:flex-start;
+}
+
+.wheel{
+    width: 50px;
+    height: 200px;
+    background: #000000;
+    border-radius: 4px;
+    margin: 350px 0;
+}
+
+#bus {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: column;
+    gap: 8px;
+
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seat {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    display:flex;
+    /*background: #d1d5db;*/
+    /*box-shadow: 0 5px 5px #000000;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.aisle{
+    width: 30px;
+}
+
+/*.seat.empty {
+    background: #a73030;
+}
+*/
+
+.girl {
+    background-color: rgb(253, 148, 218);
+    color: #333;
+}
+
+.boy {
+    background-color: rgb(45, 80, 255);
+    color: #333;
+}
+
+.empty{
+    background-color: lightgray;
+}
+
+.section2 {
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+    background: #555648;
+    color: #000000;
+    border-radius: 12px;
+    text-align: center;
+}
