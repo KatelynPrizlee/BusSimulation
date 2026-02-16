@@ -63,14 +63,6 @@ public class Bus {
         placeEarliest(s); //if no girls to sit next to..
     }
 
-    public boolean isGirlLeft(int row){
-        return (seats[row][0].isGirl());
-    }
-
-    public boolean isGirlRight(int row){
-        return (seats[row][3].isGirl());
-    }
-
     public void placeEarliest(Student st){ //place is nearest non taken spot, look at windows first then look left to right
         for(int i = 0; i < 12; i++){
             if(!isRowFull(i)){
@@ -116,7 +108,8 @@ public class Bus {
         }
     }
 
-    public void displaySeats(){
+    //testing
+    /*public void displaySeats(){
         System.out.println("------Front------");
         for(int i = 0; i<12; i++){
             System.out.print(seats[i][0].getStudent());
@@ -128,6 +121,7 @@ public class Bus {
         }
         System.out.println("------Back------");
     }
+    */
 
     public Seat[][] getArray(){
         return seats;
