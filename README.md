@@ -13,4 +13,7 @@ Back End
 >Randomly generates attributes for each student (Bus stop, Gender)
 
 Technology Used
->
+>Spring Boot
+>JS
+>CSS
+>HTML
